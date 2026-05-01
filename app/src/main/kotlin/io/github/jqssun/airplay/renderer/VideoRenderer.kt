@@ -122,6 +122,9 @@ class VideoRenderer {
 
         val format = MediaFormat.createVideoFormat(mime, videoWidth, videoHeight)
         format.setInteger(MediaFormat.KEY_MAX_INPUT_SIZE, 1024 * 1024)
+        format.setInteger(MediaFormat.KEY_COLOR_STANDARD, MediaFormat.COLOR_STANDARD_BT709)
+        format.setInteger(MediaFormat.KEY_COLOR_RANGE, MediaFormat.COLOR_RANGE_LIMITED)
+        format.setInteger(MediaFormat.KEY_COLOR_TRANSFER, MediaFormat.COLOR_TRANSFER_SDR_VIDEO)
 
         codec = MediaCodec.createDecoderByType(mime).also {
             it.configure(format, s, null, 0)

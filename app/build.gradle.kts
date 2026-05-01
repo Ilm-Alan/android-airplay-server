@@ -36,7 +36,7 @@ android {
         versionName = "0.0.7"
 
         ndk {
-            abiFilters += listOf("arm64-v8a", "x86_64")
+            abiFilters += listOf("armeabi-v7a")
         }
 
         externalNativeBuild {

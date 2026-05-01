@@ -4,14 +4,14 @@ package io.github.jqssun.airplay
 object Prefs {
     const val NAME = "settings"
 
-    const val SERVER_NAME = "server_name"; const val DEF_SERVER_NAME = "Android AirPlay"
+    const val SERVER_NAME = "server_name"; const val DEF_SERVER_NAME = "Fire TV"
     const val SERVER_PORT = "server_port"; const val DEF_SERVER_PORT = 7000
     const val AUTO_START = "auto_start"; const val DEF_AUTO_START = true
     const val H265_ENABLED = "h265_enabled"; const val DEF_H265_ENABLED = true
     const val ALAC_ENABLED = "alac_enabled"; const val DEF_ALAC_ENABLED = false
     const val SW_ALAC_ENABLED = "sw_alac_enabled"; const val DEF_SW_ALAC_ENABLED = true
     const val AAC_ENABLED = "aac_enabled"; const val DEF_AAC_ENABLED = true
-    const val RESOLUTION = "resolution"; const val DEF_RESOLUTION = "auto"
+    const val RESOLUTION = "resolution"; const val DEF_RESOLUTION = "1280x720"
     const val MAX_FPS = "max_fps"; const val DEF_MAX_FPS = 60
     const val OVERSCANNED = "overscanned"; const val DEF_OVERSCANNED = false
     const val REQUIRE_PIN = "require_pin"; const val DEF_REQUIRE_PIN = false
